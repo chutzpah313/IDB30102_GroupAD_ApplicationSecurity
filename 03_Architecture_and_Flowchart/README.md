@@ -1,13 +1,14 @@
-# Architecture and Flowchart
+# 03 - System Architecture and Flowchart
 
-This folder contains the proposed technical design for the research.
+**Owner:** Karam Abohadeer (Member 3)  
+**Research Area:** Application Security (Automotive Software Systems)  
 
-Planned contents include:
+This directory contains the technical design, structural architecture, and process flowcharts for the proposed Automotive Application Security Testing System.
 
-- Proposed system architecture
-- System/process flowchart
-- DSRM methodology flow
-- Secure SDLC workflow
-- Data flow or processing stages
+## Planned Deliverables
+- **Proposed System Architecture Diagram:** Integration of SAST and DAST scanning engines within a Secure SDLC environment.
+- **System/Process Flowchart:** Detailed pipeline execution from code commit to vulnerability reporting.
+- **DSRM Methodology Flow:** Sequential mapping according to Design Science Research Methodology phases.
+- **Secure SDLC Workflow:** Alignment with NIST SSDF standards for continuous application security testing.
 
-All diagrams must remain consistent with Chapter 3 of the Research Proposal.
+*All structural diagrams in this directory are synchronized with Chapter 3 of the Research Proposal.*
