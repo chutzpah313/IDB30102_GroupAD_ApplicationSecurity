@@ -1,42 +1,86 @@
-# IDB30102 Group AD - Application Security
+# Automotive Application Security Testing System for Improved Vulnerability Detection
 
-## Research Title
-Design and Evaluation of an Integrated SAST-DAST DevSecOps Framework for Application Security in Automotive Software Systems
+## Course Information
+- Course: IDB30102 Research Methodology
+- Group: AD
+- Research Area: Application Security
+- Semester: July 2026
 
-## Group
-GROUP AD
+## Team Members
+- Aleen Mahib Mahmud - Team Leader
+- Hassan Ibrahim Toure
+- Karam Abohadeer
+- Abasheikh Yusuf Kamal
 
-## Research Area
-Application Security
+## Research Problem
+The study addresses two main problems:
 
-## Course
-IDB30102 - Research Methodology
+1. Existing standalone application security testing approaches may provide incomplete vulnerability coverage.
 
-## Semester
-July 2026
+2. Automotive application security testing is not always continuously integrated into Secure SDLC and DevSecOps practices.
 
 ## Research Aim
-To design and evaluate an integrated SAST-DAST DevSecOps framework for improving application vulnerability detection within a controlled automotive software development environment.
+To develop an automotive application security testing system for improving vulnerability detection within a controlled software development environment.
 
 ## Research Objectives
 
 ### RO1
-To analyse existing SAST, DAST and Secure SDLC practices and identify their limitations for application security in automotive software systems.
+To study existing application security testing approaches for automotive software systems.
 
 ### RO2
-To design and develop a prototype DevSecOps framework that integrates SAST and DAST security testing within a Secure SDLC workflow for a controlled automotive software test environment.
+To develop an application security testing system for automotive software within a Secure SDLC environment.
 
 ### RO3
-To evaluate the proposed framework against standalone security testing approaches using vulnerability detection coverage, false positive rate, severity coverage and testing time within the selected test environment.
+To test the functionality and security performance of the proposed application security testing system.
 
 ## Proposed Solution
-A prototype DevSecOps application security framework that integrates SAST and DAST security testing, consolidates vulnerability findings, maps findings to recognised vulnerability categories, classifies severit and produces a unified security report.
+The proposed solution is a prototype Automotive Application Security Testing System that integrates complementary static and dynamic security testing activities within a Secure SDLC workflow.
+
+The system is expected to:
+- perform static security testing;
+- perform dynamic security testing;
+- consolidate vulnerability findings;
+- classify identified weaknesses;
+- support OWASP/CWE mapping;
+- generate a unified security report.
 
 ## Research Methodology
 Design Science Research Methodology (DSRM)
 
 ## Development Model
-Secure Software Development Lifecycle (Secure SDLC), guided primarily by the NIST Secure Software Development Framework (SSDF).
+Secure Software Development Lifecycle (Secure SDLC), primarily guided by the NIST Secure Software Development Framework (SSDF).
+
+## Expected Output
+A working prototype automotive application security testing system.
+
+## Proposed Evaluation
+The system will be tested using measurable metrics such as:
+- vulnerability detection coverage;
+- false-positive rate;
+- severity coverage;
+- testing or execution time;
+- OWASP/CWE category coverage where appropriate.
 
 ## Testing Scope
-All testing will be conducted in a controlled and authorised laboratory environment. No live or third-party systems will be tested without prior written authorisation.
+Testing will be conducted only in a controlled and authorised laboratory environment.
+
+## Repository Structure
+- `00_Project_Documentation/` - research direction and project alignment
+- `01_Research_Papers/` - selected research papers and paper summaries
+- `02_Literature_Review/` - literature analysis and research gap
+- `03_Architecture_and_Flowchart/` - proposed architecture and system flow
+- `04_Source_Code/` - prototype source code and technical implementation
+- `05_Data_or_Sample_Input/` - sample inputs and test environment information
+- `06_Results_or_Expected_Output/` - expected and preliminary outputs
+- `07_References/` - references, standards and technical resources
+
+## Research Alignment
+Research Problem  
+→ Literature Review  
+→ Research Gap  
+→ Research Objectives  
+→ Proposed Methodology  
+→ Architecture / Flowchart  
+→ Technical Components  
+→ Proposed Evaluation  
+→ Expected Outcome
