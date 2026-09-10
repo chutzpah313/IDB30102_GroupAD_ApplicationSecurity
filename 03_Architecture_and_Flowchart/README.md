@@ -10,14 +10,14 @@ This directory contains the structural architecture diagrams, process flowcharts
 ## 1. Proposed High-Level Architecture Diagram
 The framework integrates SAST (Semgrep) and DAST (OWASP ZAP) engines into a continuous DevSecOps pipeline for microservices and automotive software components.
 
-![Proposed System Architecture](Proposed_System_Architecture.png)
+![Proposed System Architecture](./Proposed_System_Architecture.png.png)
 
 ---
 
 ## 2. System Execution Flowchart
 Detailed step-by-step processing logic from code commit trigger to automated parser aggregation and vulnerability reporting.
 
-![System Flowchart](System_Flowchart.png)
+![System Flowchart](./System_Flowchart.png.png)
 
 ---
 
