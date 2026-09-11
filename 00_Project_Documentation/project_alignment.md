@@ -1,94 +1,104 @@
-# Group AD Project Alignment
+# Project Alignment
 
-## Research Area
-Application Security
+## Research Title
 
-## Final Title
 Automotive Application Security Testing System for Improved Vulnerability Detection
 
 ## Research Problem 1
-Existing standalone application security testing approaches may provide incomplete vulnerability coverage.
+
+Standalone application security testing approaches may provide incomplete vulnerability coverage because SAST and DAST examine different aspects of an application.
 
 ## Research Problem 2
-Automotive application security testing is not always continuously integrated into Secure SDLC and DevSecOps practices.
 
-## Literature Review Direction
-The literature review will examine:
-- existing static application security testing approaches;
-- existing dynamic application security testing approaches;
-- strengths and limitations of standalone testing;
-- Secure SDLC and DevSecOps security integration;
-- automotive software security testing approaches;
-- evaluation methods and metrics used in previous studies.
-
-## Research Gap
-The study focuses on the lack of a practical and integrated application security testing system for automotive software development that combines complementary security testing activities and can be tested using measurable security metrics.
+Application security testing is not sufficiently integrated within continuous Secure SDLC practices for automotive software development.
 
 ## Research Aim
+
 To develop an automotive application security testing system for improving vulnerability detection within a controlled software development environment.
 
 ## Research Objectives
 
 ### RO1
+
 To study existing application security testing approaches for automotive software systems.
 
 ### RO2
-To develop an application security testing system for automotive software within a Secure SDLC environment.
+
+To develop an application security testing system for automotive software within a Secure Software Development Life Cycle environment.
 
 ### RO3
+
 To test the functionality and security performance of the proposed application security testing system.
 
-## Objective-to-GitHub Mapping
+## Research Gap
 
-### RO1
-Supported by:
-- `01_Research_Papers/`
-- `02_Literature_Review/`
+The literature shows limited availability of a practical automotive application security testing system that integrates SAST and DAST within a Secure SDLC workflow and evaluates the resulting system using measurable security metrics.
 
-### RO2
-Supported by:
-- `03_Architecture_and_Flowchart/`
-- `04_Source_Code/`
+## Proposed Methodology
 
-### RO3
-Supported by:
-- `05_Data_or_Sample_Input/`
-- `06_Results_or_Expected_Output/`
+Design Science Research Methodology will guide the research process.
 
-## Research Methodology
-Design Science Research Methodology (DSRM)
+The six phases are:
+
+1. Problem Identification and Motivation
+2. Define Objectives of a Solution
+3. Design and Development
+4. Demonstration
+5. Evaluation
+6. Communication
 
 ## Development Model
-Secure Software Development Lifecycle (Secure SDLC)
 
-## Proposed Technical Direction
-The prototype system is expected to include:
-- static application security testing;
-- dynamic application security testing;
-- vulnerability result consolidation;
-- vulnerability classification;
-- OWASP/CWE mapping where appropriate;
-- unified security reporting;
-- integration within a controlled Secure SDLC workflow.
+Secure Software Development Life Cycle guided by the NIST Secure Software Development Framework.
 
-## Proposed Evaluation
-The system will be tested using measurable metrics such as:
-- vulnerability detection coverage;
-- false-positive rate;
-- severity coverage;
-- testing or execution time;
-- OWASP/CWE category coverage where appropriate.
+## Proposed Technical Approach
 
-## Expected Output
-A working prototype automotive application security testing system.
+The proposed system will use:
 
-## Required Alignment Chain
-Research Problem
-→ Literature Review
-→ Research Gap
-→ Research Objectives
-→ Proposed Methodology
-→ Architecture / Flowchart
-→ Technical Components
-→ Proposed Evaluation
-→ Expected Outcome
+- Semgrep for SAST
+- OWASP ZAP for DAST
+- GitHub Actions for CI/CD workflow
+- Docker for the controlled test environment
+- Python for result processing
+- JSON for structured results
+- CWE and OWASP for vulnerability classification
+- CVSS where applicable for severity information
+
+## Evaluation Plan
+
+The proposed system will be compared using three configurations:
+
+1. SAST only
+2. DAST only
+3. Integrated SAST and DAST
+
+The evaluation metrics are:
+
+- vulnerability detection coverage
+- false positive proportion
+- severity coverage
+- testing time
+
+## Expected Outcome
+
+A working prototype of the Automotive Application Security Testing System that integrates SAST and DAST and produces a unified security report.
+
+## Alignment Chain
+
+Research Problem  
+↓  
+Literature Review  
+↓  
+Research Gap  
+↓  
+Research Objectives  
+↓  
+Proposed Methodology  
+↓  
+System Architecture and Flowchart  
+↓  
+Technical Components  
+↓  
+Proposed Evaluation  
+↓  
+Expected Outcome
