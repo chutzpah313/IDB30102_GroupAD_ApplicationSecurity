@@ -1,3 +1,4 @@
+cat > 03_Architecture_and_Flowchart/README.md <<'EOF'
 # Architecture and Flowchart
 
 This folder contains the methodology and system design visuals used in Chapter 3 of the final research proposal.
@@ -13,3 +14,4 @@ Proposed system flowchart.
 
 ## Figure 3.4
 Proposed research timeline based on Design Science Research Methodology.
+EOF
