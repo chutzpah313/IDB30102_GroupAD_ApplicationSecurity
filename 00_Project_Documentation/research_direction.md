@@ -1,70 +1,93 @@
-# Group AD Research Contract
+# Research Direction
 
-## Research Area
-Application Security
+## Research Title
 
-## Final Research Title
 Automotive Application Security Testing System for Improved Vulnerability Detection
 
-## Research Problem 1
-Existing standalone application security testing approaches provide incomplete vulnerability coverage. Static and dynamic security testing examine different aspects of software behaviour and each may miss vulnerability classes outside its analysis scope. The desired state is a more complete security testing process that assesses both source code and runtime conditions. The research need is therefore to improve vulnerability detection through a more integrated application security testing system.
+## Research Area
 
-## Research Problem 2
-Automotive software security testing is often performed through separate tools, specialised test activities, or limited experimental environments. The desired state is to integrate security testing earlier and more continuously into the software development lifecycle. Existing research shows limited integration between automotive application security testing and continuous Secure SDLC or DevSecOps practices. This creates a need for a practical system that can coordinate and automate application security testing in a controlled automotive software environment.
+Application Security
+
+## Research Focus
+
+This research focuses on improving vulnerability detection for automotive software by integrating Static Application Security Testing and Dynamic Application Security Testing within a controlled Secure Software Development Life Cycle environment.
+
+The study does not aim to create new SAST or DAST engines. It focuses on integrating existing security testing tools into one coordinated workflow and consolidating their findings into a unified security report.
+
+## Main Research Problems
+
+The research addresses two main problems.
+
+1. Standalone SAST and DAST approaches may provide incomplete vulnerability coverage because each technique examines different aspects of an application.
+
+2. Application security testing is not sufficiently integrated into continuous Secure SDLC practices for automotive software development.
 
 ## Research Aim
+
 To develop an automotive application security testing system for improving vulnerability detection within a controlled software development environment.
 
 ## Research Objectives
 
-### RO1
-To study existing application security testing approaches for automotive software systems.
+1. To study existing application security testing approaches for automotive software systems.
 
-### RO2
-To develop an application security testing system for automotive software within a Secure SDLC environment.
+2. To develop an application security testing system for automotive software within a Secure Software Development Life Cycle environment.
 
-### RO3
-To test the functionality and security performance of the proposed application security testing system.
-
-## Proposed Solution
-Automotive Application Security Testing System
-
-The proposed solution is a prototype application security testing system that integrates complementary static and dynamic security testing activities within a Secure SDLC workflow. The system will consolidate vulnerability findings, classify identified weaknesses and produce a unified security report.
+3. To test the functionality and security performance of the proposed application security testing system.
 
 ## Research Methodology
-Design Science Research Methodology (DSRM)
+
+Design Science Research Methodology will be used because the study develops and evaluates a technical artefact.
 
 ## Development Model
-Secure Software Development Lifecycle (Secure SDLC)
 
-Primary reference:
-NIST Secure Software Development Framework (SSDF)
+Secure Software Development Life Cycle guided by the NIST Secure Software Development Framework.
 
-## Expected Output
-A working prototype automotive application security testing system.
+## Proposed System
+
+The proposed system will integrate SAST and DAST within a controlled CI/CD workflow.
+
+The intended process is:
+
+1. Source code is committed to GitHub.
+2. GitHub Actions triggers the testing workflow.
+3. Semgrep performs static security testing.
+4. The application is deployed inside a controlled Docker environment.
+5. OWASP ZAP performs dynamic security testing.
+6. Security results are collected in structured format.
+7. Python processes and normalises the findings.
+8. Duplicate or overlapping findings are identified.
+9. Findings are classified using CWE and relevant OWASP categories.
+10. A unified security report is generated.
 
 ## Proposed Evaluation
-The proposed system will be tested using measurable functional and security metrics such as:
 
-- Vulnerability detection coverage
-- False-positive rate
-- Severity coverage
-- Testing or execution time
-- OWASP/CWE category coverage where appropriate
+Three testing configurations will be compared:
 
-## Testing Scope
-All testing will be conducted in a controlled and authorised laboratory environment. No live or third-party system will be tested without prior written authorisation.
+1. SAST only
+2. DAST only
+3. Integrated SAST and DAST
 
-## Research Flow
-Research Problem
-→ Literature Review
-→ Research Gap
-→ Research Objectives
-→ Proposed Methodology
-→ Architecture / Flowchart
-→ Technical Components
-→ Proposed Evaluation
-→ Expected Outcome
+The evaluation will use:
 
-## Change Control
-The research title, problem statements, aim, objectives, proposed solution, methodology and development model are frozen. Any change must be agreed by all four group members.
+- vulnerability detection coverage
+- false positive proportion
+- severity coverage
+- testing time
+
+## Testing Environment
+
+All testing will be conducted within a controlled and authorised academic environment.
+
+The testbed may represent an automotive related application such as an infotainment service, vehicle information service or telematics related API.
+
+The research will not conduct testing against live vehicles, production automotive systems, manufacturer infrastructure or third party services without permission.
+
+## Expected Outcome
+
+The expected outcome is a working prototype that integrates static and dynamic application security testing and produces a unified security report.
+
+## Current Project Stage
+
+This repository represents the research proposal and preliminary design stage.
+
+Architecture, workflow, evaluation planning and supporting documentation are prepared before full prototype implementation and experimental evaluation.
