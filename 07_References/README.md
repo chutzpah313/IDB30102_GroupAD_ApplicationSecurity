@@ -1,15 +1,16 @@
-# References and External Resources
+# References
 
-This folder contains references and supporting resources used in the research.
+This folder contains references and supporting sources used in the research proposal.
 
-Planned contents include:
+The reference list should match the citations used in the final proposal.
 
-- Full APA references
-- Links to research papers
-- Dataset references
-- Framework and library references
-- GitHub or open-source resources
-- Technical documentation
-- Security standards
+Sources may include:
 
-All external resources, source code, datasets and research materials must be properly acknowledged.
+- academic journal articles
+- conference papers
+- NIST guidance
+- automotive cybersecurity research
+- application security testing studies
+- Secure SDLC and DevSecOps studies
+
+All references should be checked for accuracy and consistency before final submission.
