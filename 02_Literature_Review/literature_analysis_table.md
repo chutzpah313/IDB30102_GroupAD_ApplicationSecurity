@@ -1,33 +1,25 @@
-# Literature Analysis Table — Owner: HASSAN
+# Literature Analysis Table
 
-Thematic comparison of the sources underpinning Chapter 2. Grouped by theme (not by
-paper order) so the table itself supports the "critical synthesis" standard in the
-Section A rubric (1.3 Chapter 2 — 5 marks).
+This table summarises supporting literature by theme and relates the reviewed work to the proposed Automotive Application Security Testing System.
 
 | Theme | Source (Author, Year) | Method / Focus | Key Result | Limitation | Relevance to this project |
 |---|---|---|---|---|---|
-| Secure SDLC foundation | NIST (2022) — SSDF v1.1 | Framework definition (practices, not empirical study) | Defines 4 practice groups: prepare org, protect software, produce well-secured software, respond to vulnerabilities | Prescriptive, not tool-specific; needs a concrete testing layer to operationalise | Provides the development-model vocabulary the team's frozen contract already commits to |
-| SAST effectiveness | Charoenwet et al. (2024) | Empirical evaluation of static analysis tools on secure code review tasks | Tools reliably flag known unsafe patterns but a large share of findings are not exploitable in context | High false-positive rate without contextual/runtime validation | Justifies pairing SAST with DAST for cross-validation rather than using SAST alone |
-| DAST in CI/CD | Rangnau et al. (2020) | Case study integrating dynamic testing tools into a CI/CD pipeline | Continuous, automated DAST scans replaced periodic manual pentests at the staging stage | Limited to execution paths actually exercised during automated scans | Confirms DAST's pipeline position (post-build/staging) used in the proposed architecture |
-| DAST in CI/CD | Yadati (2021) | Case study on continuous security testing with dynamic tools | Supports feasibility of embedding DAST as a repeatable pipeline stage | Single-case study; limited generalisability | Secondary support for DAST placement in the pipeline |
-| Hybrid/integrated testing | Duda et al. (2025) | Literature review + experimental comparison of SAST, DAST, and combined use | Integrated SAST+DAST improved detection coverage and reduced false positives vs. either alone | Reviews mostly general-purpose software, not automotive-specific | Directly supports the core hypothesis (RO3) of comparing standalone vs. integrated testing |
-| DevSecOps structure | Angermeir et al. (2024) | Study on automated continuous security compliance | Organisations still lack structured, repeatable models for where/how to place security tests in a pipeline | Focus on compliance automation broadly, not SAST-DAST specifically | Motivates the need for a *structured* framework rather than ad-hoc tool placement — core research gap |
-| Supply-chain / pipeline guidance | Chandramouli et al. (2024) — NIST SP 800-204D | Government guidance on securing CI/CD pipelines | Recommends consistent classification/reporting of findings (e.g., OWASP/CWE) across tools | Guidance-level, not empirically tested on a specific framework | Justifies the proposed framework's unified, severity-classified reporting design |
-| Automotive verification | Franco da Silva et al. (2023) | Cyber Digital Twin (CDT) for continuous automotive security requirement verification | Continuous automated checks against firmware-extracted security data, detecting known vulnerabilities over time | Operates at firmware level, not application/API layer | Shows automotive research favours continuous verification — but leaves an application-layer gap this project fills |
-| Automotive verification | Marksteiner et al. (2021) | Cyber digital twins for automated automotive cybersecurity testing | Automated, continuous testing needed given growing vehicle connectivity | Also firmware/black-box level; no SAST-DAST application-security integration | Reinforces the automotive research gap identified in 2.9 |
-| Regulatory framework | ISO/SAE 21434:2021 | International standard for automotive cybersecurity engineering | Mandates a lifecycle-wide Secure Development Lifecycle with risk-based threat identification | Does not prescribe how to integrate specific application-security testing techniques (SAST/DAST) | Provides the compliance frame the proposed framework aligns to, without duplicating its scope |
+| Secure SDLC foundation | NIST (2022) — SSDF v1.1 | Framework definition (practices, not empirical study) | Defines practices for preparing organisations, protecting software, producing well-secured software and responding to vulnerabilities | Prescriptive, not tool-specific | Supports the Secure SDLC development model used in the final proposal |
+| SAST effectiveness | Charoenwet et al. (2024) | Empirical evaluation of static analysis tools for secure code review | Static analysis can identify known unsafe patterns but may generate findings that require contextual validation | Limited runtime visibility and potential false positives | Supports combining source-code analysis with runtime testing |
+| DAST in CI/CD | Rangnau et al. (2020) | Case study integrating dynamic security testing into a CI/CD pipeline | Demonstrates the feasibility of repeatable automated DAST within delivery workflows | Limited to execution paths reached during testing | Supports the DAST stage in the proposed workflow |
+| DAST in CI/CD | Yadati (2021) | Case study on continuous security testing with dynamic tools | Supports embedding DAST as a repeatable pipeline activity | Single-case context limits generalisability | Provides additional support for continuous dynamic testing |
+| Hybrid/integrated testing | Duda et al. (2025) | Comparison of SAST, DAST and combined use | Integrated testing can provide broader vulnerability detection than either method alone | General-purpose software focus rather than automotive applications | Supports RO3 comparison of standalone and integrated testing |
+| DevSecOps structure | Angermeir et al. (2024) | Automated continuous security compliance | Highlights the need for structured placement of security activities in development pipelines | Broad compliance focus | Supports coordinated security testing within the proposed Secure SDLC workflow |
+| Supply-chain / pipeline guidance | Chandramouli et al. (2024) — NIST SP 800-204D | Guidance for securing CI/CD pipelines | Supports consistent handling and reporting of security findings across development workflows | Guidance rather than an empirical evaluation | Supports the proposed system's result consolidation and classification approach |
+| Automotive verification | Franco da Silva et al. (2023) | Cyber Digital Twin for continuous automotive security verification | Demonstrates continuous automated automotive security checks | Focuses on firmware-level verification | Helps establish the application-level research gap |
+| Automotive verification | Marksteiner et al. (2021) | Cyber digital twins for automated automotive cybersecurity testing | Supports continuous automated testing in connected-vehicle environments | Does not focus on integrated application-level SAST and DAST | Reinforces the automotive application-security research gap |
+| Automotive cybersecurity standard | ISO/SAE 21434:2021 | Automotive cybersecurity engineering standard | Defines lifecycle-oriented automotive cybersecurity practices | Does not prescribe a specific SAST/DAST integration method | Provides the wider automotive cybersecurity context for the proposed system |
 
-## Datasets and metrics identified from the literature
+## Datasets and Evaluation Considerations
 
-- **Vulnerability taxonomies used for classification:** OWASP Top 10, CWE (referenced by Chandramouli et al., 2024; Duda et al., 2025) — recommended for the proposed framework's unified report.
-- **Common evaluation metrics across sources:** detection coverage, false-positive rate, true/false positive counts, testing time/scan duration.
-- **CVE databases** referenced in automotive digital-twin studies (Franco da Silva et al., 2023) as the source of known-vulnerability ground truth — relevant to ABASHEIKH's baseline/dataset definition (Section 6).
-- No source reviewed here used a public automotive-application benchmark dataset; most automotive studies work on vendor/lab firmware, which supports defining a **controlled, self-built test environment** (as the team's frozen Evaluation Concept already specifies) rather than relying on an existing public dataset.
+- **Classification:** CWE and relevant OWASP categories can be used to classify findings.
+- **Evaluation metrics:** vulnerability detection coverage, false-positive proportion, severity coverage and testing time.
+- **Ground truth:** the controlled test environment will contain known vulnerabilities so detection coverage can be measured.
+- **Test environment:** the study uses a controlled, authorised automotive-oriented application environment rather than live vehicles or production systems.
 
-## How to keep this table current
-
-1. When a new paper is added to `01_Research_Papers/README.md`, add one row here in the
-   matching theme before pushing.
-2. Keep the "Relevance to this project" column tied to a specific RO (RO1/RO2/RO3) or to
-   the Comparison of Existing Approaches table in Chapter 2 (Section 2.8) — this is what
-   the rubric's "traceability" criterion (2.2) checks.
+The repository remains at the research proposal and preliminary design stage. No experimental results are claimed in this table.
