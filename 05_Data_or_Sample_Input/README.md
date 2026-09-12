@@ -1,13 +1,19 @@
-# Data or Sample Input
+# Data and Sample Input
 
-This folder contains or documents the controlled test inputs and environment used for the proposed research.
+This folder contains proposed sample data and controlled test environment information for evaluating the Automotive Application Security Testing System.
 
-Planned contents include:
+The study will not use live vehicle systems. All testing will be conducted within a controlled and authorised academic environment.
 
-- Sample application inputs
-- Dataset description
-- Test environment description
-- Dataset/source links
-- Intended use of each input
+## Proposed Test Data
 
-No confidential, private, sensitive or restricted data should be uploaded.
+The controlled testbed may contain known vulnerabilities that can be detected by SAST, DAST or both.
+
+Possible vulnerability types include:
+
+- insecure input handling
+- injection weaknesses
+- exposed secrets
+- weak authentication
+- security misconfiguration
+
+Known vulnerabilities will provide the ground truth required for evaluation.
