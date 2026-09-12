@@ -1,6 +1,6 @@
 # References
 
-The sources below are real, verified sources relevant to our topic (SAST/DAST integration, DevSecOps, and automotive software security). I pulled these directly from search results and confirmed the author names, so they are safe to cite — but you should still access each one yourself before the final submission to pull the specific facts/quotes you actually use, and to confirm the citation matches your library/database's formatting.
+
 
 ## Automotive Software Security
 
@@ -30,13 +30,5 @@ National Institute of Standards and Technology. (2022). *Secure software develop
 
 OWASP Foundation. (n.d.). *OWASP Top 10*. Retrieved 2026, from https://owasp.org/www-project-top-ten/
 
-> Use this for your severity/category mapping (Section 3.14) since your evaluation metrics explicitly reference OWASP categories.
 
----
-
-## What to do next
-
-1. Open each link above yourself and read enough to actually cite specific claims accurately in Chapter 2/3 — don't cite something you haven't read.
-2. For the two marked "confirm author list directly," track down the actual publication page before adding it to your final reference list — citing a source with an incomplete or guessed author list is worse than not citing it.
-3. Add any additional sources Hassan already has from the Assignment 1 SLR literature table, since many of those are likely still relevant here and already vetted.
 4. Remove any source from this list that doesn't end up actually cited somewhere in the final proposal — an uncited reference sitting in this folder looks sloppy to a marker checking consistency.
