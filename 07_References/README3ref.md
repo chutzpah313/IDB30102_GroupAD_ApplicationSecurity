@@ -31,4 +31,4 @@ National Institute of Standards and Technology. (2022). *Secure software develop
 OWASP Foundation. (n.d.). *OWASP Top 10*. Retrieved 2026, from https://owasp.org/www-project-top-ten/
 
 
-4. Remove any source from this list that doesn't end up actually cited somewhere in the final proposal — an uncited reference sitting in this folder looks sloppy to a marker checking consistency.
+
