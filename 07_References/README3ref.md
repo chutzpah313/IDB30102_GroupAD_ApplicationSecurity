@@ -10,19 +10,19 @@ Luo, F., Zhang, X., Yang, Z., Jiang, Y., Wang, J., Wu, M., & Feng, W. (2022). Cy
 
 Mapping the landscape of software vulnerabilities in connected vehicles. *Software Quality Journal*. https://link.springer.com/article/10.1007/s11219-026-09787-y
 
-> A survey of automotive software vulnerabilities and attack vectors in connected vehicles, including infotainment and telematics systems — good support for your Problem Statement framing around automotive-specific risk. (Check this page directly for the full author list before citing, since it wasn't fully visible in search results.)
+> A survey of automotive software vulnerabilities and attack vectors in connected vehicles, including infotainment and telematics systems — good support for your Problem Statement framing around automotive-specific risk. 
 
 ## SAST, DAST, and Integrated Testing
 
 Mateo Tudela, F., Bermejo Higuera, J. R., Bermejo Higuera, J., Sicilia Montalvo, J. A., & Argyros, M. I. (2020). On combining static, dynamic and interactive analysis security testing tools to improve OWASP Top Ten security vulnerability detection in web applications. *Applied Sciences, 10*(24), 9119. https://doi.org/10.3390/app10249119
 
-> Directly supports your core argument (Problem Statement 1) that combining testing methods improves vulnerability coverage over any single approach — this is probably your single most useful citation.
+> Directly supports your core argument (Problem Statement 1) that combining testing methods improves vulnerability coverage over any single approach 
 
 ## DevSecOps and CI/CD Integration
 
-Search ResearchGate or your university's database for: "Integrating Security into CI/CD Pipelines: A DevSecOps Approach with SAST, DAST, and SCA Tools" (found via ResearchGate). Confirm the full author list and publication venue directly from the source before citing, since it wasn't fully visible in search results.
+Search ResearchGate or your university's database for: "Integrating Security into CI/CD Pipelines: A DevSecOps Approach with SAST, DAST, and SCA Tools" (found via ResearchGate). 
 
-## Standards and Frameworks (cite these directly from the official source, not a search result)
+
 
 National Institute of Standards and Technology. (2022). *Secure software development framework (SSDF) version 1.1: Recommendations for mitigating the risk of software vulnerabilities* (NIST SP 800-218). U.S. Department of Commerce. https://doi.org/10.6028/NIST.SP.800-218
 
